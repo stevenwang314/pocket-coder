@@ -1,0 +1,11 @@
+admin_email=email
+admin_user=user
+admin_password=password
+custom_server_domain_name=domain
+server_port=3000
+postgres_host=localhost
+postgres_user=postgres
+postgres_port=5432
+postgres_password=password
+postgres_database=database
+postgres_database_init=postgres

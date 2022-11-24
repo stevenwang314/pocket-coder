@@ -1,0 +1,40 @@
+#login-frame {
+    /*Decorate our frame and border color*/
+    background-color: bisque;
+    border: 3px solid yellowgreen;
+
+    /*Nudge the frame. Not all monitors are large and some can be small so we cap it at 75% of the browser size.
+    Extra contents will allow scrolling of contents*/
+    width: 640px;
+    height: 340px;
+    max-width: 100vh;
+    max-height: 100vh;
+    overflow: auto;
+
+    /*Translate and then center it properly*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+}
+
+.two-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 240px 380px);
+}
+
+#signUpLink {
+    color: blue; 
+    font-weight: bold;
+
+   text-align: center;
+}
+
+#signUpLink:hover {
+    color: red;
+}
+
+#signUpLink:active {
+    color: orange;
+}

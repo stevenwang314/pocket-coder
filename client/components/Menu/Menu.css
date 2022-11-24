@@ -1,0 +1,21 @@
+#userInfo {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 32px;
+}
+
+#rightClickMenu, #rightClickMenu2, #rightClickMenu3 {
+    user-select: none;
+    background-color: white;
+    font-size: 24px;
+}
+
+.list:hover,  .rightClickElements:hover {
+    background-color: yellow;
+}
+
+.list:active, .rightClickElements:active {
+    background-color: orange;
+}
+

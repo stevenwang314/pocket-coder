@@ -1,0 +1,57 @@
+{
+  "name": "pocket-coder",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./server/index.js",
+  "bin": "./server/index.js",
+  "scripts": {
+    "server": "nodemon ./server/index.js",
+    "client-dev": "webpack-dev-server --mode development --open --hot",
+    "client-production": "webpack --watch --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jquery": "^3.6.1",
+    "localtunnel": "^2.0.2",
+    "pg": "^8.8.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^18.2.0",
+    "react-quill": "^2.0.0",
+    "react-widgets": "^5.8.4",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.0.0",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "nodemon": "^2.0.20",
+    "pkg": "^5.8.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "pkg": {
+    "scripts": [
+      "dist/**/*.js"
+    ],
+    "assets": [
+      "dist/**/*"
+    ],
+    "targets": [
+      "node16-linux-x64",
+      "node16-macos-x64",
+      "node16-win-x64"
+    ]
+  }
+}
